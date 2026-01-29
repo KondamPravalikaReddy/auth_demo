@@ -1,9 +1,9 @@
-🔐 Multi-User Authentication Demo (Flask)
+# 🔐 Multi-User Authentication Demo (Flask)
 
 A production-style multi-user authentication system built with Python (Flask).
 This project demonstrates secure signup, login, session-based authentication, and personalized dashboards, following industry best practices.
 
-✨ Features
+# ✨ Features
 
 Secure user signup with validation
 
@@ -19,8 +19,8 @@ Secure logout with session invalidation
 
 SQLite database (no external setup required)
 
-🧱 Tech Stack
-Backend
+# 🧱 Tech Stack
+# Backend
 
 Python 3.10+
 
@@ -34,22 +34,19 @@ Flask-SQLAlchemy
 
 bcrypt
 
-Frontend
+# Frontend
 
-HTML (Jinja2 templates)
+HTML
 
 CSS
 
-Database
-
-SQLite
-
-📁 Project Structure
+# 📁 Project Structure
+```
 auth_demo/
-├── app.py              # Main Flask application
-├── models.py           # Database models
-├── forms.py            # Form validation & CSRF
-├── requirements.txt    # Dependencies
+├── app.py              
+├── models.py           
+├── forms.py            
+├── requirements.txt    
 │
 ├── templates/
 │   ├── signup.html
@@ -60,33 +57,31 @@ auth_demo/
 │   └── styles.css
 │
 └── README.md
+```
 
-▶️ Running the Project Locally
-1️⃣ Create a Virtual Environment
+# ▶️ Running the Project Locally
+# 1️⃣ Create a Virtual Environment
 python -m venv venv
 
 
-Activate it:
+# Activate it:
 
 macOS / Linux
-
 source venv/bin/activate
 
-
 Windows
-
 venv\Scripts\activate
 
-2️⃣ Install Dependencies
+# 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Application
+# 3️⃣ Run the Application
 python app.py
 
-4️⃣ Open in Browser
+# 4️⃣ Open in Browser
 http://127.0.0.1:5000
 
-🔄 Authentication Flow
+# 🔄 Authentication Flow
 📝 Signup
 
 User submits email and password
@@ -97,7 +92,7 @@ Password hashed using bcrypt
 
 User stored securely in the database
 
-🔑 Login
+# 🔑 Login
 
 Credentials verified
 
@@ -105,7 +100,7 @@ Session created using Flask-Login
 
 User redirected to dashboard
 
-📊 Dashboard
+# 📊 Dashboard
 
 Accessible only when authenticated
 
@@ -113,7 +108,7 @@ Displays logged-in user’s email
 
 Sessions are isolated per user
 
-🚪 Logout
+# 🚪 Logout
 
 Session destroyed
 
@@ -121,7 +116,7 @@ Authentication cookie invalidated
 
 User redirected to login page
 
-🔒 Security Measures
+# 🔒 Security Measures
 
 Password hashing with bcrypt
 
@@ -135,7 +130,7 @@ Secure session cookies
 
 Protected routes using @login_required
 
-⚠️ Edge Cases Handled
+# ⚠️ Edge Cases Handled
 
 Duplicate email registration
 
@@ -147,7 +142,7 @@ Concurrent logins from different devices
 
 Unauthorized dashboard access
 
-🚀 Intended Use
+# 🚀 Intended Use
 
 This project is suitable for:
 
@@ -159,9 +154,9 @@ MVPs and internal tools
 
 Portfolio or interview projects
 
-🔧 Optional Enhancements
+# 🔧 Optional Enhancements
 
-Possible extensions:
+# Possible extensions:
 
 JWT-based API authentication
 
@@ -175,7 +170,3 @@ Role-based access control
 
 Dockerized deployment
 
-📜 License
-
-This project is provided for educational and demonstration purposes.
-You are free to modify and use it as needed.
