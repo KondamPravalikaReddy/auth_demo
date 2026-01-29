@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<h2>Create Account</h2>
+
+<form method="POST">
+  {{ form.hidden_tag() }}
+  {{ form.email(placeholder="Email") }}
+  {{ form.password(placeholder="Password (8+ chars)") }}
+  {{ form.submit() }}
+</form>
+
+{% for message in get_flashed_messages() %}
+  <p class="error">{{ message }}</p>
+{% endfor %}
+
+<a href="/login">Already have an account?</a>
+
+</body>
+</html>

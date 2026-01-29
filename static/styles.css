@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+input, button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.error {
+  background: #ffe5e5;
+  padding: 10px;
+}
